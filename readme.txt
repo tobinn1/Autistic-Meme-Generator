@@ -7,7 +7,7 @@ Pillow https://python-pillow.github.io/
 
 Tools and Instructions:
 randommeme.py
-this is the main tool, it vague instructions, and requires you to locate the folder containing templates, memes and the export location.
+this is the main tool, it includes vague instructions and requires you to locate the folder containing templates, memes and the export location.
 
 memelocationtool.py
 this tool makes normal templates into usable templates, it will prompt you to input the upper lect corner of the memes location, and the same for the lower right.
