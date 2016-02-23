@@ -1,0 +1,9 @@
+{
+  "name": "Autistic Meme Generator",
+  "description": "Generates memes",
+  "logo": "",
+  "image": "",
+  "repository": "https://github.com/tobinn1/Autistic-Meme-Generator/",
+  "keywords": ["Autistic", "Generator" ],
+  "addons": [ "heroku-postgresql" ]
+}
