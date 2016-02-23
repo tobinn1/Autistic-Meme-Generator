@@ -6,9 +6,11 @@ import os, random, string
 from PIL import Image, ImageMath, ImageChops, ImageDraw, ImageFont
 from facepy import GraphAPI
 import uuid
+from flask.ext.heroku import Heroku
 from main import Generate
 
 app = Flask(__name__)
+heroku = Heroku(app)
 
 @app.route("/")
 def index():
