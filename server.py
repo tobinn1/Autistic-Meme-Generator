@@ -5,9 +5,9 @@ from facepy import GraphAPI
 import uuid
 import __main__
 
-exportpath=".\Random_Meme_Generator\Archives"
-templatefilepath=".\Random_Meme_Generator\Templates"
-memefilepath=".\Random_Meme_Generator\Memes"
+exportpath=r".\Random_Meme_Generator\Archives"
+templatefilepath=r".\Random_Meme_Generator\Templates"
+memefilepath=r".\Random_Meme_Generator\Memes"
 countx=1
 countx=int(countx)
 count=0
