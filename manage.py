@@ -16,19 +16,15 @@ countx=int(countx)
 count=0
 filename=""
 
-app = Flask(__name__)
-
-@app.route('/')
 def index():
   return render_template('template.html')
 
-@app.route('/my-link/')
 def my_link(): 
   Generate
   return('Meme Generated and uploaded')
 
 if __name__ == "__main__":
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "gettingstarted.settings")
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Autistic-Meme-Generator.settings")
 
     from django.core.management import execute_from_command_line
 
