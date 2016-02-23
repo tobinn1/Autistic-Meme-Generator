@@ -6,26 +6,19 @@ import os, random, string
 from PIL import Image, ImageMath, ImageChops, ImageDraw, ImageFont
 from facepy import GraphAPI
 import uuid
-import __main__
+from main import Generate
 
-exportpath=r".\Random_Meme_Generator\Archives"
-templatefilepath=r".\Random_Meme_Generator\Templates"
-memefilepath=r".\Random_Meme_Generator\Memes"
-countx=1
-countx=int(countx)
-count=0
-filename=""
+app = Flask(__name__)
 
+@app.route("/")
 def index():
   return render_template('template.html')
 
+@app.route("/generate/")
 def my_link(): 
-  Generate
-  return('Meme Generated and uploaded')
+  Generate()
+  return('complete')
 
 if __name__ == "__main__":
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "Autistic-Meme-Generator.settings")
-
-    from django.core.management import execute_from_command_line
-
-    execute_from_command_line(sys.argv)
+  app.debug = True
+  app.run()
