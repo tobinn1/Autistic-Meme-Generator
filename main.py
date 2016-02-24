@@ -13,7 +13,6 @@ def Generate():
     countx=1
     countx=int(countx)
     count=0
-    filename=""
     templatefile=random.choice(os.listdir(templatefilepath))
     meme1file=random.choice(os.listdir(memefilepath))
     template=Image.open(templatefilepath+"/"+templatefile).convert('RGBA') 
@@ -67,11 +66,8 @@ def Generate():
     watermarklocation2=memelocation2
     draw.text((watermarklocation1,watermarklocation2),"www.facebook.com/autsimomeme/",fill=(102,0,102,100))
     new_template=Image.alpha_composite(new_template, watermarkdraw)
-    filenameruiner=str(uuid.uuid4())
-    filename=filename+filenameruiner
-    new_template.save(filename + ".bmp")
-    shutil.move((filename + ".bmp"), exportpath)
-    return new_template.show();
+    new_template.save("temp.jpg")
+    return;
 
 def Upload():
     with open (r"C:\autismomeme\authcode.txt", "r") as myfile:
