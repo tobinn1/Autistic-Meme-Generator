@@ -90,4 +90,4 @@ def my_link():
 #  shutil.move(("temp.bmp"), ".\templates")
   return render_template('generate.html')
 if __name__ == "__main__":
-  app.run(host='0.0.0.0')
+  app.run()
