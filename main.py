@@ -1,10 +1,6 @@
-import os
-import sys
-import os, random, string
+import os, random, string, sys
 from PIL import Image, ImageMath, ImageChops, ImageDraw, ImageFont
 from facepy import GraphAPI
-import uuid
-import shutil
 
 def Generate():
     exportpath=r".\Random_Meme_Generator\Archives"
