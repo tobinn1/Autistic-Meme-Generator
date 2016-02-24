@@ -3,7 +3,6 @@ from PIL import Image, ImageMath, ImageChops, ImageDraw, ImageFont
 from facepy import GraphAPI
 
 def Generate():
-    exportpath=r".\Random_Meme_Generator\Archives"
     templatefilepath=r"\Random_Meme_Generator\Templates"
     memefilepath=r"\Random_Meme_Generator\Memes"
     countx=1
@@ -70,5 +69,5 @@ def Upload():
         authcode=myfile.read()
     graph=GraphAPI(authcode)
     graph.get('/autsimomeme/photos')
-    graph.post(path='/autsimomeme/photos',message='',source=open((filename + ".bmp"), 'rb'))
+    graph.post(path='/autsimomeme/photos',message='',source=open(("temp.jpg"), 'rb'))
     return

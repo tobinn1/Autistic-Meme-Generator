@@ -1,12 +1,10 @@
-#!/usr/bin/env python
 import os, random, string, sys
 from flask import Flask, render_template, send_file
 from PIL import Image, ImageMath, ImageChops, ImageDraw, ImageFont
-from flask.ext.heroku import Heroku
+#from flask.ext.heroku import Heroku
 from main import Generate
 
 app = Flask(__name__)
-heroku = Heroku(app)
 
 @app.route("/")
 def index():
